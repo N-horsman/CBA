@@ -2,6 +2,9 @@
 
 :root {
   --primary-color: #FFF5C8; /*use this as a scope for a color used multiplpe times*/
+  --secondary-color: #A40703; 
+  --dark-color: #730301;
+  --light-color: #f4f4f4;
 }
 
 *{
@@ -98,9 +101,42 @@ img {
   z-index: 100;
 }
 
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+/*Mission*/
+.mission {
+  padding-top: 100px;
+}
+
+.mission-heading {
+  max-width: 500px;
+  margin: auto;
+}
+
+.mission .grid h3 {
+  font-size: 35px;
+}
+
+.mission .grid p {
+  font-size: 16px;
+}
+
 /*footer*/
-.footer {
-  background-color: #A40703;
-  color: #fff;
-  height: 100px;
+.footer .social a {
+  margin: 0 10px;
 }
