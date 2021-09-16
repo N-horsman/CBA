@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #FFF5C8; /*use this as a scope for a color used multiplpe times*/
-  --secondary-color: #A40703; 
+  --secondary-color: #A40703;
   --dark-color: #730301;
   --light-color: #f4f4f4;
 }
@@ -120,7 +120,11 @@ img {
 
 /*Mission*/
 .mission {
-  padding-top: 100px;
+  padding-top: 20px;
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #333;
+  position: relative;
 }
 
 .mission-heading {
@@ -139,4 +143,52 @@ img {
 /*footer*/
 .footer .social a {
   margin: 0 10px;
+}
+
+/*Tablets and under*/
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .mission .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height:auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+
+  .mission {
+    height:auto;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .showcase-form {
+    width: 300px;
+  }
 }
