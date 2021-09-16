@@ -173,6 +173,25 @@ img {
   }
 }
 
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  margin: 20px;
+}
+
+.gallery-item .thumbnail {
+  width: 240px;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+}
+
 /*Mobile*/
 @media (max-width: 500px) {
   .navbar {
