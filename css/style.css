@@ -51,73 +51,51 @@ img {
 .navbar {
   background-color: #A40703;
   color: #fff;
-  height: 70px;
+  height: 80px;
   overflow: hidden;
+}
+
+.navbar img {
+  width:70px;
+
+}
+
+.navbar img a {
+  padding: 0;
 }
 
 .navbar ul {
   display: flex;
 }
 
-.navbar a {
+.navbar ul a {
   color: #fff;
   padding: 10px;
   margin: 0 5px;
 }
 
-.navbar a:hover {
-  border-bottom: 2px #fff solid;
+/*For a animated line to appear under links - Both "after" call outs*/
+.navbar ul a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: 0 6px;
+  transition: 0.5s
 }
+
+.navbar ul a:hover::after {
+  width: 100%;
+}
+
+/* <<for a static white line to appear under links>>
+  .navbar ul a:hover {
+  border-bottom: 2px #fff solid;
+} */
 
 .navbar .flex{
   justify-content: space-between;
-}
-
-/*Dropdown*/
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  /*padding: 14px 16px;*/
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 /*Showcase*/
@@ -184,6 +162,37 @@ img {
   outline: none;
 }
 
+/*  Ancestors */
+.showcase .ancestor-text {
+  text-align: left;
+}
+
+.ancestors {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.ancestors-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.ancestors-col img{
+    width: 80%;
+    border-radius: 10px;
+}
+.ancestors-col p{
+    padding: 0;
+}
+.ancestors-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 /*Mission*/
 .mission {
   padding-top: 20px;
@@ -246,6 +255,15 @@ iframe {
     height:auto;
   }
 }
+
+.ancestor-text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
 
 /* Gallery */
 
