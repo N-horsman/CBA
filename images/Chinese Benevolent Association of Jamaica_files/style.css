@@ -182,8 +182,7 @@ img {
 @media (max-width: 768px) {
   .grid,
   .showcase .grid,
-  .mission .grid,
-  .ancestry .grid {
+  .mission .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -213,6 +212,41 @@ img {
     width: 300px;
   }
 
+}
+
+/* ---- Ancestors ---- */
+
+.ancestors{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.ancestors-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.ancestors-col img{
+    width: 80%;
+    border-radius: 10px;
+}
+.ancestors-col p{
+    padding: 0;
+}
+.ancestors-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.ancestor-text {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 100px;
 }
 
 /* ---- Mission ---- */
@@ -248,41 +282,20 @@ iframe {
 /*Tablets and under*/
 @media (max-width: 768px) {
   .mission {
-    height: auto;
+    height:auto;
   }
 }
 
-/* ---- Ancestors ---- */
-.ancestry {
-  padding-top: 20px;
-  height: auto;
-  background-color: var(--primary-color);
-  color: #333;
-  position: relative;
-}
-
-.ancestry .grid {
-  overflow: visible;
-  grid-template-columns: 65% 35%;
-  gap: 50px;
-  align-items: flex-start;
-}
-
-.ancestry a {
-  color: #333;
+/* ---- Footer ---- */
+.footer .social a {
+  margin: 0 10px;
 }
 
 
-/*Tablets and under*/
-@media (max-width: 768px) {
 
-  .ancestry .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-}
 
-/* ---- Gallery ---- */
+
+/* Gallery */
 
 .gallery {
   display: flex;
@@ -298,9 +311,4 @@ iframe {
 .gallery-item .thumbnail {
   width: 240px;
   border-radius: 10px;
-}
-
-/* ---- Footer ---- */
-.footer .social a {
-  margin: 0 10px;
 }
