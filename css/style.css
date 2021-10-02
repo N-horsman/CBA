@@ -35,6 +35,11 @@ h1,h2 {
   margin: 10px 0;
 }
 
+h2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
 p {
   margin: 10px, 0;
 }
@@ -127,6 +132,8 @@ img {
   font-size: 40px;
 }
 
+
+
 .showcase p {
   margin: 20px 0;
   grid-column: 1 / span 4;
@@ -201,45 +208,57 @@ img {
     justify-self: center;
     margin: auto;
   }
-
-  .mission {
-    height:auto;
-  }
 }
 
 /*Mobile*/
 @media (max-width: 500px) {
+  .showcase {
+    background-color: #fff;
+  }
+
   .showcase-form {
     width: 300px;
   }
-
 }
 
 /* ---- Mission ---- */
 .mission {
   padding-top: 20px;
-  height: 400px;
+  height: auto;
   background-color: var(--primary-color);
   color: #333;
   position: relative;
 }
 
+.mission .grid {
+  gap: 50px;
+  align-items: start;
+}
+
 .mission-heading {
   max-width: 500px;
   margin: auto;
-}
-
-.mission .grid h3 {
-  font-size: 35px;
+  font-weight: 500;
+  font-size: 40px;
+  }
 }
 
 .mission .grid p {
   font-size: 16px;
 }
 
+.mission .thumbnail {
+  width: 240px;
+  border-radius: 10px;
+}
+
+
+
 .contact {
   padding-top: 10px;
 }
+
+
 
 iframe {
   width: 100%;
@@ -251,6 +270,12 @@ iframe {
     height: auto;
   }
 }
+/*Mobile*/
+@media (max-width: 500px) {
+  .mission {
+    background-color: #fff;
+  }
+}
 
 /* ---- Ancestors ---- */
 .ancestry {
@@ -259,17 +284,35 @@ iframe {
   background-color: var(--primary-color);
   color: #333;
   position: relative;
+  padding-bottom: 40px;
 }
 
 .ancestry .grid {
   overflow: visible;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 100%;
   gap: 50px;
-  align-items: flex-start;
+}
+
+.ancestry .grid h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.ancestry .grid h2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.ancestry-text{
+  text-align: center;
 }
 
 .ancestry a {
   color: #333;
+}
+
+.ancestry a:hover {
+  border-bottom: 2px #333 solid;
 }
 
 
@@ -279,6 +322,13 @@ iframe {
   .ancestry .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 500px) {
+  .ancestry {
+    background-color: #fff;
   }
 }
 
@@ -299,6 +349,8 @@ iframe {
   width: 240px;
   border-radius: 10px;
 }
+
+
 
 /* ---- Footer ---- */
 .footer .social a {
