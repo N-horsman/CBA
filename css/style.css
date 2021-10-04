@@ -314,6 +314,13 @@ iframe {
 .ancestry a:hover {
   border-bottom: 2px #333 solid;
 }
+.ancestry .gallery-item {
+  margin: 10px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+
 
 
 /*Tablets and under*/
